@@ -60,7 +60,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -72,7 +72,7 @@ html {
 }
 
 /* Sections
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * Remove the margin in all browsers.
@@ -98,7 +98,7 @@ h1 {
 }
 
 /* Grouping content
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -120,7 +120,7 @@ pre {
 }
 
 /* Text-level semantics
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * Remove the gray background on active links in IE 10.
@@ -136,7 +136,7 @@ a {
 abbr[title] {
 	border-bottom: none;
 	text-decoration: underline;
-	text-decoration: underline dotted;
+	text-decoration: dotted;
 }
 
 /**
@@ -186,7 +186,7 @@ sup {
 }
 
 /* Embedded content
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * Remove the border on images inside links in IE 10.
@@ -196,7 +196,7 @@ img {
 }
 
 /* Forms
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * 1. Change the font styles in all browsers.
@@ -342,7 +342,7 @@ textarea {
 }
 
 /* Interactive
-	 ========================================================================== */
+	========================================================================== */
 
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
@@ -359,7 +359,7 @@ summary {
 }
 
 /* Misc
-	 ========================================================================== */
+	========================================================================== */
 
 /**
  * Add the correct display in IE 10+.
@@ -716,9 +716,9 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
+.site-main,
 .posts-navigation,
-.site-main
+.site-main,
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -1016,19 +1016,47 @@ textarea {
 }
 
 /*Footer*/
+.site-footer{
+	width: 65%;
+	margin: 0 auto;
+}
 .site-info{
 	color: #635960;
 	text-align: center;
 	margin-bottom: 20px;
 }
-.site-footer hr{
-	width: 65%;
+hr{
+
 	border: 0;
 	border-top: 1px solid #ccc;
 }
 .site-info a{
 	color: #ef4634;
 	text-decoration: none;
+}
+.footer-text{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 30px;
+}
+.footer-text p{
+	font-family: 'Open Sans','serif';
+	font-size: 16px;
+	color: #62585f;
+	line-height: 21px;
+	margin-bottom: 0 !important;
+}
+.footer-text a{
+	font-family: 'Open Sans', 'serif';
+	font-size:14px;
+	color: #ef463f;
+	text-decoration: none;
+}
+.footer-text a:hover{
+	text-decoration: underline;
+}
+.socials{
+	margin-top: 20px;
 }
 /*Slider*/
 .slider{
