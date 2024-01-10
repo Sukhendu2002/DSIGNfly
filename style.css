@@ -1085,3 +1085,30 @@ textarea {
 	color: #ffffff;
 	line-height: 24px;
 }
+/*Features*/
+.main-features{
+	background-image: url("images/features-repeatable-bg.png");
+}
+.features-container{
+	width: 65%;
+	margin: 0 auto;
+	/*padding: 10px 0;*/
+	display: flex;
+}
+.feature{
+	display: flex;
+	align-items: center;
+}
+.feature__info{
+	margin-left: 20px;
+}
+.feature__title{
+	color: #ef4634;
+	margin-bottom: 0 !important;
+}
+.feature__description{
+	color: #222222;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 0 !important;
+}
