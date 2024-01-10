@@ -4,6 +4,7 @@
  *
  * @package Dsignfly
  */
+
 get_header();
 get_template_part( 'template-parts/features' );
 ?>
@@ -19,12 +20,27 @@ get_template_part( 'template-parts/features' );
 				the_post();
 				get_template_part( 'template-parts/content', 'card' );
 			endwhile;
-			the_posts_navigation();
+			?>
+			<div class="pagination">
+				<?php echo paginate_links(
+                    array(
+                        'next_text' => '<img src="' . get_template_directory_uri() . '/images/pagination-arrow.png" alt="arrow-right" />',
+                        'prev_text' => '<img
+                          style="transform: rotate(180deg);"
+                         src="' . get_template_directory_uri() . '/images/pagination-arrow.png" alt="arrow-left" />',
+                    )
+                ); ?>
+			</div>
+			<?php
+
 		else :
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
 		?>
+
+<!--            //add pagination-->
+
 		</div>
 		<div class="sidebar">
 			<?php get_sidebar(); ?>

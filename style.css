@@ -1238,3 +1238,24 @@ hr{
 	color: #ef4634;
 	text-decoration: none;
 }
+
+/*Pagination*/
+.pagination{
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+.pagination .current{
+	padding: 5px 13px;
+	color: #ffffff;
+	background-color: #ef4634;
+	border-radius: 5px;
+}
+.pagination a{
+	padding: 5px 15px;
+	text-decoration: none;
+}
+.pagination .next{
+	margin-top: 1px;
+}
+
