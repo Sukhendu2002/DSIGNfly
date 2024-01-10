@@ -164,6 +164,13 @@ function add_active_class( $classes, $item ) {
 
 add_filter( 'nav_menu_css_class', 'add_active_class', 10, 2 );
 
+add_filter(
+	'excerpt_length',
+	function () {
+		return 25;
+	}
+);
+
 
 
 /**

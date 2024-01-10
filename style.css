@@ -970,6 +970,11 @@ textarea {
 }
 
 /* ------------Custom CSS----------------- */
+/*Body*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("images/repeatable-bg.png");
+}
 /*Header*/
 .site-header {
 	background-image: url("images/repeatable-bg.png");
@@ -1139,4 +1144,97 @@ hr{
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
 	margin-top: 0 !important;
+}
+
+/*Blog Page*/
+.site-main{
+	width: 65%;
+	margin: 20px auto 0;
+	display: grid;
+	grid-template-columns: 70% 30%;
+	gap: 20px;
+
+}
+.content-header h1{
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 0;
+
+}
+
+.content-header hr{
+	width: 103%;
+}
+.content{
+	padding: 20px;
+}
+.sidebar{
+	padding: 20px;
+}
+.card-info{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: #222222;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+	width: 103%;
+}
+.card-date{
+	border-right: 1px solid #cecece;
+	padding : 0 20px;
+
+
+}
+.card-day{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+}
+.card-month{
+	font-size: 10px;
+	text-transform: uppercase;
+}
+.card-title {
+	font-size: 20px;
+	line-height: 0.8;
+	display: flex;
+	justify-content: space-between;
+}
+.card-title a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.card-main{
+	display: grid;
+	grid-template-columns: 30% 70%;
+	gap: 20px;
+	margin-top: 20px;
+}
+.card-img img{
+	height: 160px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.card-title span{
+	font-size: 15px;
+
+}
+.card-title span a{
+	color: #ef4634;
+	text-decoration: none;
+}
+.card-excerpt p{
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	color: #222222;
+
+}
+
+.card-read-more a{
+	color: #ef4634;
+	text-decoration: none;
 }
