@@ -150,6 +150,23 @@ function dsignfly_scripts() {
 add_action( 'wp_enqueue_scripts', 'dsignfly_scripts' );
 
 /**
+ * Add a class to the active menu item
+ *
+ * @param  $classes
+ * @param  $item
+ */
+function add_active_class( $classes, $item ) {
+	if ( 0 == $item->menu_item_parent && in_array( 'current-menu-item', $classes ) ) {
+		$classes[] = 'active';
+	}
+	return $classes;
+}
+
+add_filter( 'nav_menu_css_class', 'add_active_class', 10, 2 );
+
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -175,4 +192,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
