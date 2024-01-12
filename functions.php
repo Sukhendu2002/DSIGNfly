@@ -122,13 +122,13 @@ add_action( 'after_setup_theme', 'dsignfly_content_width', 0 );
 function dsignfly_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'dsignfly' ),
 			'id'            => 'sidebar-1',
+			'name'          => esc_html__( 'Sidebar', 'dsignfly' ),
 			'description'   => esc_html__( 'Add widgets here.', 'dsignfly' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'after_title'   => "</h2><h1>Hii</h1>\n",
 		)
 	);
 }
@@ -172,6 +172,10 @@ add_filter(
 );
 
 
+/**
+ * Load Custom Comments Layout file.
+ */
+require get_template_directory() . '/inc/comments-helper.php';
 
 /**
  * Implement the Custom Header feature.
@@ -192,6 +196,7 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
 
 /**
  * Load Jetpack compatibility file.

@@ -22,14 +22,16 @@ get_template_part( 'template-parts/features' );
 			endwhile;
 			?>
 			<div class="pagination">
-				<?php echo paginate_links(
-                    array(
-                        'next_text' => '<img src="' . get_template_directory_uri() . '/images/pagination-arrow.png" alt="arrow-right" />',
-                        'prev_text' => '<img
+				<?php
+				echo paginate_links(
+					array(
+						'next_text' => '<img src="' . get_template_directory_uri() . '/images/pagination-arrow.png" alt="arrow-right" />',
+						'prev_text' => '<img
                           style="transform: rotate(180deg);"
                          src="' . get_template_directory_uri() . '/images/pagination-arrow.png" alt="arrow-left" />',
-                    )
-                ); ?>
+					)
+				);
+				?>
 			</div>
 			<?php
 

@@ -1047,7 +1047,7 @@ hr{
 .footer-text p{
 	font-family: 'Open Sans','serif';
 	font-size: 16px;
-	color: #62585f;
+	color: #60555c;
 	line-height: 21px;
 	margin-bottom: 0 !important;
 }
@@ -1202,6 +1202,7 @@ hr{
 	line-height: 0.8;
 	display: flex;
 	justify-content: space-between;
+	color: #60555c;
 }
 .card-title a{
 	color: #ffffff;
@@ -1259,3 +1260,79 @@ hr{
 	margin-top: 1px;
 }
 
+/*Widget*/
+.wp-block-heading{
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 0;
+}
+
+/*Post*/
+.post-title a{
+	color: #60555c;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+.post-title{
+	margin-bottom: 20px;
+}
+.wp-block-image img{
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.post-content p{
+	color: #60555c;
+}
+.post-tags a{
+	color: #ef4634;
+	text-decoration: none;
+}
+/*Comments*/
+.comments-title{
+	color: #60555c;
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	font-weight: 200;
+}
+.comment-list{
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+.comment-icon{
+	margin-top: 5px;
+}
+.comment-name a{
+	color: #ef4634;
+	text-decoration: none;
+}
+.comment-header{
+	display: flex;
+}
+.comment-author{
+	color: #60555c;
+}
+.comment-text p{
+	color: #60555c;
+	margin-bottom: 10px !important;
+	margin-top: 5px !important;
+}
+.reply-icon svg{
+	transform: scaleX(-1);
+	height: 15px;
+	margin-right: 5px;
+	margin-top: 8px
+}
+.comment-reply{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	color: #60555c;
+	margin-bottom: 10px;
+}
+.comment-reply-link{
+	text-decoration: none;
+}
