@@ -1326,6 +1326,11 @@ hr{
 	margin-right: 5px;
 	margin-top: 8px
 }
+.comment-header svg{
+	height: 15px;
+	margin-right: 5px;
+	margin-top: 4px
+}
 .comment-reply{
 	display: flex;
 	align-items: center;
@@ -1335,4 +1340,9 @@ hr{
 }
 .comment-reply-link{
 	text-decoration: none;
+}
+.comment .comment{
+	margin-left: 40px;
+	border-left: 1px solid #cecece;
+	padding-left: 20px;
 }
