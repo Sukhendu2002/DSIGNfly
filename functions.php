@@ -171,6 +171,46 @@ add_filter(
 	}
 );
 
+function custom_portfolio_post_type() {
+	$labels = array(
+		'name'               => _x( 'Portfolio', 'post type general name', 'dsignfly' ),
+		'singular_name'      => _x( 'Project', 'post type singular name', 'dsignfly' ),
+		'menu_name'          => _x( 'Portfolio', 'admin menu', 'dsignfly' ),
+		'name_admin_bar'     => _x( 'Project', 'add new on admin bar', 'dsignfly' ),
+		'add_new'            => _x( 'Add New', 'project', 'dsignfly' ),
+		'add_new_item'       => __( 'Add New Project', 'dsignfly' ),
+		'new_item'           => __( 'New Project', 'dsignfly' ),
+		'edit_item'          => __( 'Edit Project', 'dsignfly' ),
+		'view_item'          => __( 'View Project', 'dsignfly' ),
+		'all_items'          => __( 'All Projects', 'dsignfly' ),
+		'search_items'       => __( 'Search Projects', 'dsignfly' ),
+		'parent_item_colon'  => __( 'Parent Projects:', 'dsignfly' ),
+		'not_found'          => __( 'No projects found.', 'dsignfly' ),
+		'not_found_in_trash' => __( 'No projects found in Trash.', 'dsignfly' ),
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'dsignfly' ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'portfolio' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => null,
+		'supports'           => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+		'show_in_rest'       => true,
+	);
+
+	register_post_type( 'portfolio', $args );
+}
+
+add_action( 'init', 'custom_portfolio_post_type' );
+
 
 /**
  * Load Custom Comments Layout file.
