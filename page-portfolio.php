@@ -13,8 +13,6 @@ $args      = array(
 	'paged'          => get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1,
 );
 $the_query = new WP_Query( $args );
-
-
 ?>
 
 	<main id="primary" class="portfolio-main">

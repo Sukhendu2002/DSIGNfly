@@ -1499,3 +1499,7 @@ hr{
 .portfolio-pagination .next{
 	margin-top: 1px;
 }
+.portfolio-filter a{
+	text-decoration: none;
+	color: #ffffff;
+}
