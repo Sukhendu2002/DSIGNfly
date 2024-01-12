@@ -1336,13 +1336,65 @@ hr{
 	align-items: center;
 	justify-content: flex-end;
 	color: #60555c;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
 .comment-reply-link{
 	text-decoration: none;
+	color: #60555c;
+	text-transform: lowercase;
 }
 .comment .comment{
 	margin-left: 40px;
 	border-left: 1px solid #cecece;
 	padding-left: 20px;
+}
+/*Comment Form*/
+.comment-form-comment{
+	margin-bottom: 5px;
+}
+.comment-form-comment textarea{
+	width: 100%;
+	height: 100px;
+	border: 1px solid #60555c;
+	padding: 10px;
+	border-radius: 0;
+}
+.comment-form-fields{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.comment-form-fields p{
+	margin-top: 0 !important;
+}
+.comment-form-author input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid  #60555c;
+	padding: 10px;
+	border-radius: 0;
+}
+.comment-form-email input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #60555c;
+	padding: 10px;
+	border-radius: 0;
+}
+.comment-form-url input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #60555c;
+	padding: 10px;
+	border-radius: 0;
+}
+.form-submit{
+	margin-top: 0 !important;
+}
+.form-submit input{
+	float: right;
+	background-color: #212121;
+	color: #ffffff;
+	border: 1px solid #212121;
+	align-items: center;
 }

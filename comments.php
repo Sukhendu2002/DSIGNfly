@@ -57,7 +57,25 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-	comment_form();
+	$comments_args = array(
+		'label_submit'         => 'Submit',
+		'title_reply'          => 'Post your comment',
+		'comment_form_top'     => 'ds',
+		'comment_notes_before' => '',
+		'comment_notes_after'  => '',
+		'comment_field'        => '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="Your Comment* " aria-required="true"></textarea></p>',
+		'fields'               => apply_filters(
+			'comment_form_default_fields',
+			array(
+				'author'  => '<span class="comment-form-fields"><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" maxlength="245" autocomplete="name" required=""></p>',
+				'email'   => '<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value=""  maxlength="100" autocomplete="email" required=""></p>',
+				'url'     => '<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value=""  maxlength="200" autocomplete="url"></p></span>',
+				'cookies' => ' ',
+			)
+		),
+	);
+
+	comment_form( $comments_args );
 	?>
 
 </div><!-- #comments -->
