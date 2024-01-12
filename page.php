@@ -13,10 +13,11 @@
  */
 
 get_header();
+get_template_part( 'template-parts/features' );
 ?>
 
 	<main id="primary" class="site-main">
-
+        <div class="content">
 		<?php
 		while ( have_posts() ) :
 			the_post();
@@ -30,9 +31,12 @@ get_header();
 
 		endwhile; // End of the loop.
 		?>
-
+        </div>
+        <div class="sidebar">
+            <?php get_sidebar(); ?>
+        </div>
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+
 get_footer();

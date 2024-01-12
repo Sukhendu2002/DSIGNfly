@@ -139,9 +139,11 @@ add_action( 'widgets_init', 'dsignfly_widgets_init' );
  */
 function dsignfly_scripts() {
 	wp_enqueue_style( 'dsignfly-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'lightbox-css', 'https://cdn.jsdelivr.net/npm/lightbox2@2.11.1/dist/css/lightbox.min.css', array(), _S_VERSION );
 	wp_style_add_data( 'dsignfly-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'dsignfly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'lightbox-js', 'https://cdn.jsdelivr.net/npm/lightbox2@2.11.1/dist/js/lightbox-plus-jquery.min.js', array( 'jquery' ), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -197,7 +199,7 @@ function custom_portfolio_post_type() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'portfolio' ),
+		'rewrite'            => array( 'slug' => 'portfolios' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => false,
