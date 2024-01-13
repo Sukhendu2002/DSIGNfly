@@ -21,8 +21,9 @@ DSIGNfly is a WordPress theme. This is an assignment project from the  [WordPres
 ### Author archive page
 ![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/a22cfd6a-3a78-411a-873e-5d29a10f9aaa)
 ### Category archive page
-![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/d97aa00f-f26a-42e3-957d-5fbbe4ac04ec)
+![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/bb70f147-ded4-42f4-8bea-6f7c3d8c7ad7)
 ### Tag archive page
-![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/a5d1b80e-3ea1-458b-8a50-c92066dbde4a)
+![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/b4a32377-58e5-4066-930c-55d9bbbc30b3)
 ### Date/Month/Year archive page
-![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/cea47847-5fda-42b5-a096-018c7beeb6d2)
+![image](https://github.com/Sukhendu2002/DSIGNfly/assets/76804228/89e5173f-3675-4f1f-a2c8-280a2718b55b)
+
