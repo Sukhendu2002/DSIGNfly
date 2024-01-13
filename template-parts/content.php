@@ -29,9 +29,9 @@
 					<a href="<?php the_permalink(); ?>">
 					<?php
 					comments_number(
-						__( 'No Comments' ),
-						__( '1 Comment' ),
-						__( '% Comments' )
+						__( 'No Comments', 'dsignfly' ),
+						__( '1 Comment', 'dsignfly' ),
+						__( '% Comments', 'dsignfly' )
 					);
 					?>
 					</a>

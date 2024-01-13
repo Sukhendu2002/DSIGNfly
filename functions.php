@@ -173,6 +173,7 @@ add_filter(
 	}
 );
 
+// This function should go in the plugin file this is just for learning purpose.
 function custom_portfolio_post_type() {
 	$labels = array(
 		'name'               => _x( 'Portfolio', 'post type general name', 'dsignfly' ),
