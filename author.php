@@ -29,8 +29,8 @@ get_header();
 				if ( $current_author ) {
 					echo '<div class="author-info">';
 					echo '<div class="author-avatar">' . get_avatar( $author_id, 150 ) . '</div>';
-					echo '<div class="author-name">' . $author_name . '</div>';
-					echo '<div class="author-description">' . $author_description . '</div>';
+					echo '<div class="author-name">' . esc_html( $author_name ) . '</div>';
+					echo '<div class="author-description">' . esc_html( $author_description ) . '</div>';
 					echo '</div>';
 				}
 
