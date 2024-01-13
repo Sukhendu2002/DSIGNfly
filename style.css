@@ -1610,3 +1610,19 @@ hr{
 	text-decoration: none;
 	color: #ffffff;
 }
+/*Auther Page*/
+.author-info{
+	display: flex;
+	gap: 20px;
+}
+.author-info img{
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.author-info .author-name{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
