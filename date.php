@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Author Archive pages.
+ * The template for displaying Date/Month/Year archive page
  *
  * @package Dsignfly
  */
@@ -14,7 +14,19 @@ get_header();
 		<div class="content">
 			<?php if ( have_posts() ) : ?>
 				<div class="category-title">
-					<h1>Author: <?php the_author(); ?></h1>
+					<h1>
+						<?php
+						if ( is_day() ) :
+							printf( __( 'Daily Archives: %s', 'text_domain' ), get_the_date() );
+						elseif ( is_month() ) :
+							printf( __( 'Monthly Archives: %s', 'text_domain' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'text_domain' ) ) );
+						elseif ( is_year() ) :
+							printf( __( 'Yearly Archives: %s', 'text_domain' ), get_the_date( _x( 'Y', 'yearly archives date format', 'text_domain' ) ) );
+						else :
+							_e( 'Archives', 'text_domain' );
+						endif;
+						?>
+					</h1>
 				</div>
 				<?php
 				while ( have_posts() ) :
