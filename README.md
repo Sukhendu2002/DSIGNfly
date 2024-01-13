@@ -1,5 +1,5 @@
 # DSIGNfly
-DSIGNfly is a WordPress theme. This is an assignment project form the [WordPress Course](https://learn.rtcamp.com/courses/wordpress-development/) form rtCamp.This theme is build with the help of [Underscores](https://underscores.me/) starter theme.
+DSIGNfly is a WordPress theme. This is an assignment project from the  [WordPress Course](https://learn.rtcamp.com/courses/wordpress-development/) offered by rtCamp.This theme is build with the help of [Underscores](https://underscores.me/) starter theme.
 
 ## Installation
 1. Download the zip file.
