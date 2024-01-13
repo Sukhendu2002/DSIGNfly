@@ -482,10 +482,10 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul,
-ol {
-	margin: 0 0 1.5em 3em;
-}
+/*ul,*/
+/*ol {*/
+/*	margin: 0 0 1.5em 3em;*/
+/*}*/
 
 ul {
 	list-style: disc;
@@ -1260,11 +1260,118 @@ hr{
 }
 
 /*Widget*/
-.wp-block-heading{
-	font-size: 20px;
+.widget-title{
+	font-size: 30px;
 	font-weight: 300;
 	line-height: 1.2;
 	margin-bottom: 0;
+}
+
+/*-----Portfolio Widget-----*/
+.widget_portfolio_widget ul{
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 5px;
+}
+.widget_portfolio_widget ul li img{
+	height: 53px;
+	width: 53px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+.widget_popular_post_widget ul{
+	list-style: none;
+	padding-left: 0;
+}
+.widget_popular_post_widget ul li{
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.widget_popular_post_widget ul li img{
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+.popular-post-content,
+.related-post-content {
+	display: flex;
+	flex-direction: column;
+}
+.popular-post-content a{
+	color: #60555c;
+	text-decoration: none;
+	font-size: 13px;
+}
+.related-post-content a{
+	color: #60555c;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.popular-post-content,
+.related-post-content span{
+	font-size: 12px;
+}
+.popular-post-content span span{
+	color: #ef4634;
+}
+.related-post-content span span{
+	color: #ef4634;
+}
+.widget_related_post_widget ul{
+	list-style: none;
+	padding-left: 0;
+}
+.widget_related_post_widget ul li{
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.widget_related_post_widget ul li img{
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+.widget_recent_post_widget ul{
+	list-style: none;
+	padding-left: 0;
+}
+.widget_recent_post_widget ul li{
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.widget_recent_post_widget ul li img{
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+.recent-post-content a{
+	color: #60555c;
+	text-decoration: none;
+	font-size: 13px;
+}
+.recent-post-content span{
+	font-size: 12px;
+}
+.recent-post-content span span{
+	color: #ef4634;
+}
+.widget_archive_widget{
+	list-style: none;
+	padding-left: 0;
+}
+
+.widget_archive_widget li a{
+	color: #60555c;
+	text-decoration: none;
+	font-size: 15px;
 }
 
 /*Post*/

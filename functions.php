@@ -128,7 +128,7 @@ function dsignfly_widgets_init() {
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => "</h2><h1>Hii</h1>\n",
+			'after_title'   => '</h2>',
 		)
 	);
 }
@@ -212,6 +212,29 @@ function custom_portfolio_post_type() {
 }
 
 add_action( 'init', 'custom_portfolio_post_type' );
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+require get_template_directory() . '/inc/class/class-portfolio-widget.php';
+require get_template_directory() . '/inc/class/class-popular-post-widget.php';
+require get_template_directory() . '/inc/class/class-related-post-widget.php';
+require get_template_directory() . '/inc/class/class-recent-post-widget.php';
+require get_template_directory() . '/inc/class/class-archive-widget.php';
+
+add_action(
+	'widgets_init',
+	function () {
+		register_widget( 'Popular_Post_Widget' );
+		register_widget( 'Portfolio_Widget' );
+		register_widget( 'Related_Post_Widget' );
+		register_widget( 'Recent_Post_Widget' );
+		register_widget( 'Archive_Widget' );
+	}
+);
+
 
 
 /**
