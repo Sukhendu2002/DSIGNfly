@@ -26,11 +26,11 @@
 						Tel:123 456 7890 Fax:123 456789<br>
 						Email: <a href="mailto:contactus@dsignfly.com">contactus@dsignfly.com</a></p>
 					<div class="socials">
-						<a href="#"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/facebook.png" alt="facebook"></a>
-						<a href="#"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/g+.png" alt="twitter"></a>
-						<a href="#"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/linkedin.png" alt="instagram"></a>
-						<a href="#"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/pin.png" alt="pinterest"></a>
-						<a href="#"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/oldx.png" alt="youtube"></a>
+						<a href=" <?php echo esc_url( get_theme_mod( 'dsignfly_facebook' ) ); ?>"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/facebook.png" alt="facebook"></a>
+						<a href=" <?php echo esc_url( get_theme_mod( 'dsignfly_google_plus' ) ); ?> "><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/g+.png" alt="twitter"></a>
+						<a href=" <?php echo esc_url( get_theme_mod( 'dsignfly_linkedin' ) ); ?> "><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/linkedin.png" alt="instagram"></a>
+						<a href=" <?php echo esc_url( get_theme_mod( 'dsignfly_pinterest' ) ); ?> "><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/pin.png" alt="pinterest"></a>
+						<a href=" <?php echo esc_url( get_theme_mod( 'dsignfly_twitter' ) ); ?> "><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/images/oldx.png" alt="youtube"></a>
 					</div>
 				</div>
 			</div>
